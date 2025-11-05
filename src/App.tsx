@@ -10,6 +10,8 @@ import MusicMemories from "./pages/MusicMemories";
 import CartoonMemories from "./pages/CartoonMemories";
 import GadgetMemories from "./pages/GadgetMemories";
 import FunZone from "./pages/FunZone";
+import PlayableGames from "./pages/PlayableGames";
+import MusicPlayer from "./pages/MusicPlayer";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
@@ -29,6 +31,8 @@ const App = () => (
           <Route path="/memories/cartoons" element={<CartoonMemories />} />
           <Route path="/memories/gadgets" element={<GadgetMemories />} />
           <Route path="/fun-zone" element={<FunZone />} />
+          <Route path="/playable-games" element={<PlayableGames />} />
+          <Route path="/music-player" element={<MusicPlayer />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

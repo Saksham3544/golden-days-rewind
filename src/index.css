@@ -159,4 +159,17 @@ All colors MUST be HSL.
     transform: translateY(-4px);
     box-shadow: 6px 6px 0px hsl(var(--retro-charcoal) / 0.15);
   }
+  
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  .animate-flicker {
+    animation: flicker 3s ease-in-out infinite;
+  }
 }

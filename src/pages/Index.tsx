@@ -46,22 +46,92 @@ const Index = () => {
             Step into the past and rediscover the magic of your childhood
           </p>
           
-          <RetroButton 
-            icon={Play}
-            onClick={() => navigate('/memories')}
-            variant="primary"
-          >
-            Start the Journey
-          </RetroButton>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <RetroButton 
+              icon={Play}
+              onClick={() => navigate('/memories')}
+              variant="primary"
+            >
+              Start the Journey
+            </RetroButton>
+            
+            <RetroButton 
+              icon={Play}
+              onClick={() => navigate('/fun-zone')}
+              variant="secondary"
+            >
+              Fun Zone & Quizzes
+            </RetroButton>
+          </div>
+          
+          {/* New Quick Access Buttons */}
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <button
+              onClick={() => navigate('/playable-games')}
+              className="font-sans px-4 py-2 bg-retro-teal/80 text-retro-charcoal rounded-lg hover:bg-retro-teal transition-colors text-sm"
+            >
+              🎮 Play Retro Games
+            </button>
+            <button
+              onClick={() => navigate('/music-player')}
+              className="font-sans px-4 py-2 bg-retro-mustard/80 text-retro-charcoal rounded-lg hover:bg-retro-mustard transition-colors text-sm"
+            >
+              🎵 90s Music Player
+            </button>
+          </div>
         </div>
       </div>
       
       {/* Quote Section */}
       <QuoteSection />
       
+      {/* Nostalgia Section */}
+      <div className="relative bg-retro-peach/30 py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="font-retro text-2xl md:text-3xl text-retro-charcoal mb-6 animate-flicker">
+            "Do you remember..."
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="retro-card bg-retro-cream/50">
+              <p className="font-sans text-retro-charcoal">
+                📼 Recording your favorite shows on VHS tapes
+              </p>
+            </div>
+            <div className="retro-card bg-retro-cream/50">
+              <p className="font-sans text-retro-charcoal">
+                📻 Waiting hours to record a song from the radio
+              </p>
+            </div>
+            <div className="retro-card bg-retro-cream/50">
+              <p className="font-sans text-retro-charcoal">
+                🎮 Blowing on game cartridges to make them work
+              </p>
+            </div>
+          </div>
+          <p className="font-sans text-lg text-retro-charcoal/80 italic">
+            "Those were the days when happiness was simpler, and memories were made, 
+            not just captured on a phone."
+          </p>
+        </div>
+      </div>
+      
       {/* Quick Links Footer */}
       <div className="relative bg-retro-charcoal text-retro-cream py-6 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm font-sans">
+          <button 
+            onClick={() => navigate("/playable-games")}
+            className="hover:text-retro-teal transition-colors"
+          >
+            🎮 Games
+          </button>
+          <span className="text-retro-mustard">•</span>
+          <button 
+            onClick={() => navigate("/music-player")}
+            className="hover:text-retro-teal transition-colors"
+          >
+            🎵 Music
+          </button>
+          <span className="text-retro-mustard">•</span>
           <button 
             onClick={() => navigate("/fun-zone")}
             className="hover:text-retro-peach transition-colors"
