@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import RetroButton from "@/components/RetroButton";
 import VHSOverlay from "@/components/VHSOverlay";
+import QuoteSection from "@/components/QuoteSection";
 import { Play, Music, Tv, Smartphone } from "lucide-react";
 import heroImage from "@/assets/retro-hero.jpg";
 
@@ -55,18 +56,21 @@ const Index = () => {
         </div>
       </div>
       
+      {/* Quote Section */}
+      <QuoteSection />
+      
       {/* Quick Links Footer */}
       <div className="relative bg-retro-charcoal text-retro-cream py-6 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm font-sans">
           <button 
-            onClick={() => navigate('/fun-zone')}
+            onClick={() => navigate("/fun-zone")}
             className="hover:text-retro-peach transition-colors"
           >
             Fun Zone
           </button>
           <span className="text-retro-mustard">•</span>
           <button 
-            onClick={() => navigate('/about')}
+            onClick={() => navigate("/about")}
             className="hover:text-retro-peach transition-colors"
           >
             About

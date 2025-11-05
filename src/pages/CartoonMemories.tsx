@@ -8,18 +8,39 @@ const CartoonMemories = () => {
   const cartoons = [
     {
       title: "Tom & Jerry",
-      description: "The never-ending chase that taught us slapstick comedy could be an art form. No dialogue needed.",
+      description: "The never-ending chase that taught us slapstick comedy could be an art form. No dialogue needed, just pure entertainment.",
       year: "1940-Present",
+      quote: "The original frenemies before it was cool",
     },
     {
       title: "Pokémon",
-      description: "Gotta catch 'em all! We traded cards at recess and debated which starter was the best choice.",
+      description: "Gotta catch 'em all! We traded cards at recess, debated Charizard vs Blastoise, and dreamed of being Pokémon trainers.",
       year: "1997",
+      quote: "I want to be the very best, like no one ever was",
+    },
+    {
+      title: "SpongeBob SquarePants",
+      description: "Living in a pineapple under the sea taught us optimism, friendship, and the importance of loving what you do.",
+      year: "1999",
+      quote: "I'm ready! I'm ready! I'm ready!",
+    },
+    {
+      title: "Dragon Ball Z",
+      description: "Epic battles, power levels over 9000, and the belief that with enough determination, you can overcome anything.",
+      year: "1989",
+      quote: "The power comes in response to a need, not a desire",
+    },
+    {
+      title: "Scooby-Doo",
+      description: "Mystery-solving dog and his friends taught us that most monsters are just people in masks, and friendship solves everything.",
+      year: "1969",
+      quote: "Ruh-roh! And I would have gotten away with it too!",
     },
     {
       title: "The Powerpuff Girls",
-      description: "Sugar, spice, and everything nice. Three pint-sized superheroes saving Townsville before bedtime.",
+      description: "Sugar, spice, and everything nice. Three pint-sized superheroes proving that girls can save the world before bedtime.",
       year: "1998",
+      quote: "Saving the world before bedtime",
     },
   ];
 
@@ -50,17 +71,20 @@ const CartoonMemories = () => {
 
         <div className="space-y-6">
           {cartoons.map((cartoon) => (
-            <div key={cartoon.title} className="retro-card">
+            <div key={cartoon.title} className="retro-card group">
               <div className="flex items-start justify-between mb-3">
-                <h2 className="font-retro text-xl text-retro-charcoal">
+                <h2 className="font-retro text-xl text-retro-charcoal group-hover:text-retro-peach transition-colors">
                   {cartoon.title}
                 </h2>
                 <span className="pixel-border px-3 py-1 text-xs font-retro text-retro-mustard bg-retro-cream rounded">
                   {cartoon.year}
                 </span>
               </div>
-              <p className="font-sans text-retro-charcoal/80">
+              <p className="font-sans text-retro-charcoal/80 mb-3">
                 {cartoon.description}
+              </p>
+              <p className="font-sans text-sm italic text-retro-teal border-l-4 border-retro-teal pl-4">
+                "{cartoon.quote}"
               </p>
             </div>
           ))}
