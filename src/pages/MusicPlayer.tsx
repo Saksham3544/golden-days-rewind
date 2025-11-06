@@ -86,6 +86,17 @@ const MusicPlayer = () => {
 
   const currentSong = songs[currentSongIndex];
 
+  const handlePlayPause = () => {
+    setIsPlaying((prev) => {
+      const next = !prev;
+      if (!prev) {
+        // Many official uploads restrict embedding; open in a new tab as fallback
+        window.open(`https://www.youtube.com/watch?v=${currentSong.youtubeId}`, "_blank", "noopener,noreferrer");
+      }
+      return next;
+    });
+  };
+
   const playNext = () => {
     setCurrentSongIndex((prev) => (prev + 1) % songs.length);
   };
@@ -166,7 +177,7 @@ const MusicPlayer = () => {
             </button>
             
             <button
-              onClick={() => setIsPlaying(!isPlaying)}
+              onClick={handlePlayPause}
               className="p-4 rounded-full bg-retro-teal hover:bg-retro-peach transition-colors"
             >
               {isPlaying ? (
