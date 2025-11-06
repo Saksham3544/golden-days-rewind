@@ -125,7 +125,7 @@ const MusicPlayer = () => {
             <iframe
               width="100%"
               height="100%"
-              src={`https://www.youtube.com/embed/${currentSong.youtubeId}?autoplay=${isPlaying ? 1 : 0}`}
+              src={`https://www.youtube-nocookie.com/embed/${currentSong.youtubeId}?autoplay=${isPlaying ? 1 : 0}&modestbranding=1&rel=0&playsinline=1`}
               title={currentSong.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -145,6 +145,15 @@ const MusicPlayer = () => {
               <span>•</span>
               <span>{currentSong.genre}</span>
             </div>
+            <a
+              href={`https://www.youtube.com/watch?v=${currentSong.youtubeId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center mt-3 px-3 py-1 rounded-md bg-retro-cream hover:bg-retro-peach/40 text-retro-charcoal transition-colors text-xs font-sans"
+              aria-label="Open current song on YouTube"
+            >
+              Open on YouTube
+            </a>
           </div>
 
           {/* Player Controls */}
