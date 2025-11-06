@@ -24,63 +24,63 @@ const MusicPlayer = () => {
       artist: "Kumar Sanu",
       year: "1996",
       genre: "Bollywood Romance",
-      youtubeId: "XgbD-yZHpVk"
+      youtubeId: "Z_hGOkATYLI"
     },
     {
       id: 2,
       title: "Tujhe Dekha To",
-      artist: "Kumar Sanu",
+      artist: "Kumar Sanu & Lata Mangeshkar",
       year: "1995",
       genre: "Bollywood Romance",
-      youtubeId: "NzQZe5MD11g"
+      youtubeId: "qrwBeXmViRg"
     },
     {
       id: 3,
       title: "Pehla Nasha",
-      artist: "Udit Narayan",
+      artist: "Udit Narayan & Sadhana Sargam",
       year: "1992",
       genre: "Bollywood Romance",
       youtubeId: "jNH0G4axTL0"
     },
     {
       id: 4,
-      title: "Aashiqui Mein Har",
-      artist: "Kumar Sanu",
-      year: "1993",
-      genre: "Bollywood Romance",
-      youtubeId: "Q3qYrJUKjNE"
-    },
-    {
-      id: 5,
       title: "Ek Ladki Ko Dekha",
       artist: "Kumar Sanu",
       year: "1994",
       genre: "Bollywood Romance",
-      youtubeId: "XgbD-yZHpVk"
+      youtubeId: "HOGn8kBLVdI"
     },
     {
-      id: 6,
-      title: "Yaad Aa Rahi Hai",
-      artist: "Kumar Sanu & Alka Yagnik",
-      year: "1995",
-      genre: "Bollywood Romance",
-      youtubeId: "lj8fKJRWURA"
-    },
-    {
-      id: 7,
+      id: 5,
       title: "Chura Ke Dil Mera",
       artist: "Kumar Sanu & Alka Yagnik",
       year: "1994",
       genre: "Bollywood Romance",
-      youtubeId: "EFAx0ZIqnLQ"
+      youtubeId: "d3gJO7dMBN4"
+    },
+    {
+      id: 6,
+      title: "Bahon Ke Darmiyan",
+      artist: "Hariharan & Anuradha Paudwal",
+      year: "1995",
+      genre: "Bollywood Romance",
+      youtubeId: "TQx_kjYoAz0"
+    },
+    {
+      id: 7,
+      title: "Aankh Mila Ke",
+      artist: "Kumar Sanu",
+      year: "1992",
+      genre: "Bollywood Romance",
+      youtubeId: "4KKlhLqZgtc"
     },
     {
       id: 8,
-      title: "Mera Dil Bhi Kitna Pagal Hai",
-      artist: "Kumar Sanu",
-      year: "1997",
+      title: "Dheere Dheere Se",
+      artist: "Kumar Sanu & Alka Yagnik",
+      year: "1990",
       genre: "Bollywood Romance",
-      youtubeId: "vfU-mAhzcgI"
+      youtubeId: "KJQ6iu5JXHM"
     }
   ];
 
