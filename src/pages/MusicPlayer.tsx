@@ -24,7 +24,7 @@ const MusicPlayer = () => {
       artist: "Kumar Sanu",
       year: "1996",
       genre: "Bollywood Romance",
-      youtubeId: "Z_hGOkATYLI"
+      youtubeId: "P2s1Cl23oik"
     },
     {
       id: 2,
@@ -85,17 +85,6 @@ const MusicPlayer = () => {
   ];
 
   const currentSong = songs[currentSongIndex];
-
-  const handlePlayPause = () => {
-    setIsPlaying((prev) => {
-      const next = !prev;
-      if (!prev) {
-        // Many official uploads restrict embedding; open in a new tab as fallback
-        window.open(`https://www.youtube.com/watch?v=${currentSong.youtubeId}`, "_blank", "noopener,noreferrer");
-      }
-      return next;
-    });
-  };
 
   const playNext = () => {
     setCurrentSongIndex((prev) => (prev + 1) % songs.length);
@@ -177,7 +166,7 @@ const MusicPlayer = () => {
             </button>
             
             <button
-              onClick={handlePlayPause}
+              onClick={() => setIsPlaying(!isPlaying)}
               className="p-4 rounded-full bg-retro-teal hover:bg-retro-peach transition-colors"
             >
               {isPlaying ? (
