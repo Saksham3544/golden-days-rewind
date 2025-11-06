@@ -111,7 +111,7 @@ const MusicPlayer = () => {
           <div className="inline-block mb-4 animate-pulse">
             <Volume2 className="w-16 h-16 text-retro-teal" />
           </div>
-          <h1 className="font-retro text-3xl md:text-5xl mb-4 text-retro-charcoal">
+          <h1 className="font-retro text-4xl md:text-6xl lg:text-7xl mb-6 text-retro-charcoal leading-tight">
             Nostalgic Music Player
           </h1>
           <p className="font-sans text-lg text-retro-charcoal/80">
