@@ -32,7 +32,7 @@ const MusicPlayer = () => {
       artist: "Kumar Sanu & Lata Mangeshkar",
       year: "1995",
       genre: "Bollywood Romance",
-      youtubeId: "qrwBeXmViRg"
+      youtubeId: "cNV5hLSa9H8"
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const MusicPlayer = () => {
       artist: "Udit Narayan & Sadhana Sargam",
       year: "1992",
       genre: "Bollywood Romance",
-      youtubeId: "jNH0G4axTL0"
+      youtubeId: "Ki41AKu0iHc"
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ const MusicPlayer = () => {
       artist: "Kumar Sanu",
       year: "1994",
       genre: "Bollywood Romance",
-      youtubeId: "HOGn8kBLVdI"
+      youtubeId: "IAIGnS9BPKs"
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ const MusicPlayer = () => {
       artist: "Kumar Sanu & Alka Yagnik",
       year: "1994",
       genre: "Bollywood Romance",
-      youtubeId: "d3gJO7dMBN4"
+      youtubeId: "Yqj1_V90KJo"
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ const MusicPlayer = () => {
       artist: "Hariharan & Anuradha Paudwal",
       year: "1995",
       genre: "Bollywood Romance",
-      youtubeId: "TQx_kjYoAz0"
+      youtubeId: "kHYYfKAQdHA"
     },
     {
       id: 7,
@@ -72,7 +72,7 @@ const MusicPlayer = () => {
       artist: "Kumar Sanu",
       year: "1992",
       genre: "Bollywood Romance",
-      youtubeId: "4KKlhLqZgtc"
+      youtubeId: "s-_nUaV4mKs"
     },
     {
       id: 8,
@@ -80,7 +80,7 @@ const MusicPlayer = () => {
       artist: "Kumar Sanu & Alka Yagnik",
       year: "1990",
       genre: "Bollywood Romance",
-      youtubeId: "KJQ6iu5JXHM"
+      youtubeId: "Mcs2xEZ6K8o"
     }
   ];
 
